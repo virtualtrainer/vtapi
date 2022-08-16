@@ -1,0 +1,63 @@
+dude 123
+Created NFT 0.0.28383774 with serial: 1
+
+Burn NFT with serial 1: SUCCESS 
+
+Current NFT supply: 0 
+
+Alice NFT Auto-Association: SUCCESS 
+
+Bob NFT Manual Association: SUCCESS 
+
+- Treasury balance: 0 NFTs of ID:0.0.28383774 and 10000 ℏ
+- Alice balance: undefined NFTs of ID:0.0.28383774 and 1000 tℏ
+- Bob balance: 0 NFTs of ID:0.0.28383774 and 1000 tℏ
+/mnt/c/Users/ju3ti/Documents/GitHub/backend1/node_modules/@hashgraph/sdk/lib/ReceiptStatusError.cjs:25
+    super(props, `receipt for transaction ${props.transactionId.toString()} contained error status ${props.status.toString()}`);
+    ^
+
+ReceiptStatusError: receipt for transaction 0.0.0@1642169366.186433913 contained error status INVALID_NFT_ID
+    at new ReceiptStatusError (/mnt/c/Users/ju3ti/Documents/GitHub/backend1/node_modules/@hashgraph/sdk/lib/ReceiptStatusError.cjs:25:5)
+    at TransactionReceiptQuery._mapStatusError (/mnt/c/Users/ju3ti/Documents/GitHub/backend1/node_modules/@hashgraph/sdk/lib/transaction/TransactionReceiptQuery.cjs:267:12)
+    at TransactionReceiptQuery.execute (/mnt/c/Users/ju3ti/Documents/GitHub/backend1/node_modules/@hashgraph/sdk/lib/Executable.cjs:392:22)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async TransactionResponse.getReceipt (/mnt/c/Users/ju3ti/Documents/GitHub/backend1/node_modules/@hashgraph/sdk/lib/transaction/TransactionResponse.cjs:51:21)
+    at async main (/mnt/c/Users/ju3ti/Documents/GitHub/backend1/testnet.js:143:24) {
+  status: Status { _code: 226 },
+  transactionId: TransactionId {
+    accountId: AccountId {
+      shard: Long { low: 0, high: 0, unsigned: false },
+      realm: Long { low: 0, high: 0, unsigned: false },
+      num: Long { low: 0, high: 0, unsigned: false },
+      aliasKey: undefined,
+      _checksum: null
+    },
+    validStart: Timestamp {
+      seconds: Long { low: 1642169366, high: 0, unsigned: false },
+      nanos: Long { low: 186433913, high: 0, unsigned: false }
+    },
+    scheduled: false,
+    nonce: null
+  },
+  transactionReceipt: TransactionReceipt {
+    status: Status { _code: 226 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 833431,
+      expirationTime: 1970-01-20T00:09:32.400Z
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: true },
+    topicRunningHash: Buffer(0) [Uint8Array] [],
+    totalSupply: Long { low: 0, high: 0, unsigned: true },
+    scheduledTransactionId: null,
+    serials: [],
+    duplicates: [],
+    children: []
+  }
+}
