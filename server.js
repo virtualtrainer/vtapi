@@ -31,7 +31,7 @@ let transporter = nodemailer.createTransport(smtpTransport({
      host: 'smtp.gmail.com',
      port: 465, 
      auth: {        
-          user: 'ju3tin@gmail.com',        
+          user: 'ju3tin95@gmail.com',        
           pass: 'Grierson1979.'    
      },
      tls: {
@@ -45,7 +45,7 @@ app.post("/send-mail", function(req,res){
          message = req.body.message;
      //options
      const mailOptions = {
-          from: 'registrations@thpoint0.io',
+          from: 'ju3tin95@gmail.com',
           to: to,                   // from req.body.to
           subject: subject,         //from req.body.subject
           html: message             //from req.body.message
