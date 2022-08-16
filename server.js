@@ -28,7 +28,7 @@ smtpTransport = require('nodemailer-smtp-transport');
 const nodemailer = require('nodemailer');
 let transporter = nodemailer.createTransport(smtpTransport({    
      service: 'thpoint0.io',
-     host: 'mail.thpoint0.io',
+     host: 'smtp.gmail.com',
      port: 465, 
      auth: {        
           user: 'registrations@thpoint0.io',        
