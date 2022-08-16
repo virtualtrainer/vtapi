@@ -61,6 +61,32 @@ app.post("/send-mail", function(req,res){
      res.json({ message: "message sent" });
 });
 
+
+app.post("/test12a", function (req,res){
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: ju3tin95,
+      pass: 'Grierson1979.',
+    },
+  });
+  
+  let mailOptions = {
+    from: 'myemail@gmail.com',
+    to: "receiver@example.com",
+    subject: `The subject goes here`,
+    html: `The body of the email goes here in HTML`,
+  };
+  
+  transporter.sendMail(mailOptions, function (err, info) {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(info);
+    }
+  });
+})
+
 db.mongoose
   .connect(process.env.MONGO3, {
     useNewUrlParser: true,
