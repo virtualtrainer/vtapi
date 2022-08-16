@@ -79,7 +79,7 @@ db.mongoose
   
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to TH.0 Community built by Justin Grierson" });
+  res.json({ message: "Welcome to the Virtual Trainer Platform" });
 });
 
 // routes
