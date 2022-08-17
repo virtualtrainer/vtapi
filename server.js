@@ -64,7 +64,7 @@ app.post("/send-mail", function(req,res){
 
 app.post("/test12a", function (req,res){
   let transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'Gmail',
     auth: {
       user: 'ju3tin95@gmail.com',
       pass: 'Grierson1979.',
