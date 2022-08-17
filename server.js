@@ -26,14 +26,12 @@ router = express.Router();
 smtpTransport = require('nodemailer-smtp-transport');
 //setup nodemailer
 const nodemailer = require('nodemailer');
-let transporter = nodemailer.createTransport({    
-     service: 'Gmail',
- //    host: 'smtp.gmail.com',
- //    port: 465, 
-     auth: {        
-      user: 'ju3tin95@gmail.com',
-      pass: 'apykawostwmdghln', 
-     }
+let transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'ju3tin95@gmail.com',
+    pass: 'apykawostwmdghln',
+  },
 });
 //get route to send mail, from form
 app.post("/send-mail", function(req,res){
