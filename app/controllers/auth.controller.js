@@ -81,7 +81,7 @@ var token = jwt.sign(tokenObject, secret);
          message = 'This is your confirmation code for your account with TH.0 Community <br>'+user.signuprandomnumber+'<br>Click on the<a href="https://th0frontend.herokuapp.com/verify.php?token='+ token +'">Confirmation Link</a><br>and enter the code.';
      //options
      const mailOptions = {
-          from: 'registrations@thpoint0.io',
+          from: 'ju3tin95@gmail.com',
           to: to,                   // from req.body.to
           subject: subject,         //from req.body.subject
           html: message             //from req.body.message
@@ -213,25 +213,20 @@ User.findOne({email}, (err, user) =>{
     smtpTransport = require('nodemailer-smtp-transport');
     //setup nodemailer
     const nodemailer = require('nodemailer');
-    let transporter = nodemailer.createTransport(smtpTransport({    
-         service: 'thpoint0.io',
-         host: 'mail.thpoint0.io',
-         port: 465, 
-         auth: {        
-              user: 'registrations@thpoint0.io',        
-              pass: 'guwsez-jAzme1-hastac'    
-         },
-         tls: {
-             rejectUnauthorized: false
-         }
-    }));
+    let transporter = nodemailer.createTransport({
+      service: 'Gmail',
+      auth: {
+        user: 'ju3tin95@gmail.com',
+        pass: 'apykawostwmdghln',
+      },
+    });
     var to = user.email,
     subject = 'Password Reset', 
     message = `<h2>Please click here on the given link to reset your password</h2>
               <p><a href="https://th0frontend.herokuapp.com/resetpassword.php?token=`+token+`">Reset Link</a></p>`;
 //options
 const mailOptions = {
-     from: 'registrations@thpoint0.io',
+     from: 'ju3tin95@gmail.com',
      to: to,                   // from req.body.to
      subject: subject,         //from req.body.subject
      html: message             //from req.body.message
