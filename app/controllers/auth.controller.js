@@ -62,18 +62,13 @@ exports.signup = (req, res) => {
           smtpTransport = require('nodemailer-smtp-transport');
 //setup nodemailer
 const nodemailer = require('nodemailer');
-let transporter = nodemailer.createTransport(smtpTransport({    
-     service: 'thpoint0.io',
-     host: 'mail.thpoint0.io',
-     port: 465, 
-     auth: {        
-          user: 'registrations@thpoint0.io',        
-          pass: 'guwsez-jAzme1-hastac'    
-     },
-     tls: {
-         rejectUnauthorized: false
-     }
-}));
+let transporter = nodemailer.createTransport({
+  service: 'Gmail',
+  auth: {
+    user: 'ju3tin95@gmail.com',
+    pass: 'apykawostwmdghln',
+  },
+});
 //get route to send mail, from form
 var tokenObject = {
   email: user.email,
