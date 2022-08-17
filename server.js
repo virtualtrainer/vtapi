@@ -72,7 +72,7 @@ app.post("/test12a", function (req,res){
   
   const mailOptions4 = {
     from: 'ju3tin95@gmail.com',
-    to: to,                   // from req.body.to
+    to: toss,                   // from req.body.to
     subject: subject,         //from req.body.subject
     html: message             //from req.body.message
 };
