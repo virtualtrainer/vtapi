@@ -77,8 +77,8 @@ app.post("/test12a", function (req,res){
   const mailOptions = {
     from: 'ju3tin95@gmail.com',
     to: to,
-    subject: subject,
-    html: message,
+    subject: `The subject goes here`,
+    html: `The body of the email goes here in HTML`,
   };
   
   transporter.sendMail(mailOptions, function (err, info) {
