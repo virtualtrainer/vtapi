@@ -67,7 +67,7 @@ app.post("/test12a", function (req,res){
   subject = req.body.subject, 
   message = req.body.message;
   let transporter = nodemailer.createTransport({
-    service: 'Gmail ',
+    service: 'Gmail',
     auth: {
       user: 'ju3tin95@gmail.com',
       pass: 'apykawostwmdghln',
