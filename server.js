@@ -63,9 +63,9 @@ app.post("/send-mail", function(req,res){
 
 
 app.post("/test12a", function (req,res){
-//  var to = req.body.to,
-//  subject = req.body.subject, 
-//  message = req.body.message;
+  var toss = req.body.to,
+  subject = req.body.subject, 
+  message = req.body.message;
   let transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -76,7 +76,7 @@ app.post("/test12a", function (req,res){
   
   const mailOptions = {
     from: 'ju3tin95@gmail.com',
-    to: req.body.to,
+    to: 'ju3tin@hotmail.co.uk',
     subject: `The subject goes here`,
     html: `The body of the email goes here in HTML`,
   };
