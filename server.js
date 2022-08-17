@@ -74,9 +74,9 @@ app.post("/test12a", function (req,res){
     },
   });
   
-  let mailOptions = {
+  const mailOptions = {
     from: 'ju3tin95@gmail.com',
-    to: 'ju3tin@hotmail.co.uk',
+    to: to,
     subject: `The subject goes here`,
     html: `The body of the email goes here in HTML`,
   };
