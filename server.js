@@ -72,10 +72,10 @@ app.post("/test12a", function (req,res){
   
   const mailOptions4 = {
     from: 'ju3tin95@gmail.com',
-    to: 'ju3tin@hotmail.co.uk',
-    subject: `The subject goes here`,
-    html: `The body of the email goes here in HTML`,
-  };
+    to: to,                   // from req.body.to
+    subject: subject,         //from req.body.subject
+    html: message             //from req.body.message
+};
   
   transporter.sendMail(mailOptions4, function (err, info) {
     if (err) {
