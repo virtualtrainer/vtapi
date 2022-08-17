@@ -61,7 +61,7 @@ app.post("/test12a", function (req,res){
   var toss = req.body.to,
   subject = req.body.subject, 
   message = req.body.message;
-  let transporter = nodemailer.createTransport({
+  const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
       user: 'ju3tin95@gmail.com',
@@ -69,14 +69,14 @@ app.post("/test12a", function (req,res){
     },
   });
   
-  let mailOptions = {
+  const mailOptions4 = {
     from: 'ju3tin95@gmail.com',
     to: 'ju3tin@hotmail.co.uk',
     subject: `The subject goes here`,
     html: `The body of the email goes here in HTML`,
   };
   
-  transporter.sendMail(mailOptions, function (err, info) {
+  transporter.sendMail(mailOptions4, function (err, info) {
     if (err) {
       res.json(err);
     } else {
