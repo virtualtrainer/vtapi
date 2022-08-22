@@ -30,7 +30,7 @@ let transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'ju3tin95@gmail.com',
-    pass: 'apykawostwmdghln',
+    pass: 'oleluejrczmlfgrn',
   },
 });
 //get route to send mail, from form
@@ -66,7 +66,7 @@ app.post("/test12a", function (req,res){
     service: 'Gmail',
     auth: {
       user: 'ju3tin95@gmail.com',
-      pass: 'apykawostwmdghln',
+      pass: 'oleluejrczmlfgrn',
     },
   });
   
