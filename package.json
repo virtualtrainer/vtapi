@@ -35,5 +35,8 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "react-router-sitemap": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13"
   }
 }
