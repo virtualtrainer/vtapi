@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
 const { createWallet, generatePrivateKey } = require('./app/routes/utils/hederaWallet');
+const dataPath = './data/demos.json';
  
 const app = express();
 
