@@ -104,7 +104,7 @@ db.mongoose
 
 
 app.get('/demolist1', (req, res) => {
-    fs.readFile(dataPath, 'utf8', (err, data) => {
+    res.readFile(dataPath, 'utf8', (err, data) => {
       if (err) {
         throw err;
       }
