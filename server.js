@@ -4,7 +4,7 @@ const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
 const { createWallet, generatePrivateKey } = require('./app/routes/utils/hederaWallet');
 const dataPath = './data/demos.json';
- 
+import * as fs from 'fs';
 const app = express();
 
 var corsOptions = {
