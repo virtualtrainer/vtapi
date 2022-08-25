@@ -112,7 +112,7 @@ app.get('/demolist1', (req, res) => {
       res.send(JSON.parse(data));
     });
   });
-};
+
   
 // simple route
 app.get("/", (req, res) => {
