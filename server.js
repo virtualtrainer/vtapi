@@ -102,6 +102,17 @@ db.mongoose
   });
 
 
+
+app.get('/demolist1', (req, res) => {
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+      if (err) {
+        throw err;
+      }
+
+      res.send(JSON.parse(data));
+    });
+  });
+};
   
 // simple route
 app.get("/", (req, res) => {
