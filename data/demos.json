@@ -1,1 +1,68 @@
 
+{
+   "items": [{
+        "image": "/images/resource/feature-1.jpg",
+        "cat": "GYM",
+        "name": "Psycho Training",
+		"url": "",
+        "icon": "flaticon-fitness",
+		"intro": "Winning means you’re willing to go longer, work harder for more."
+      },
+      {
+        "image": "/images/resource/feature-2.jpg",
+        "cat": "CARDIO",
+        "name": "Self Defence",
+		"url": "",
+        "icon": "flaticon-exercise-1",
+		"intro": "Don’t practice until you get it right practice until can’t wrong"
+      },
+      {
+        "image": "/images/resource/feature-3.jpg",
+        "cat": "FITNESS",
+        "name": "FITNESS FOR MAN",
+		"url": "",
+        "icon": "flaticon-sports-1",
+		"intro": "Winning means you’re willing to go longer, work harder for more."
+      },
+      {
+        "image": "/images/resource/feature-4.jpg",
+        "cat": "STRENGTH",
+        "name": "Strength Training",
+		"url": "",
+        "icon": "",
+		"intro": "Winning means you’re willing to go longer, work harder for more."
+      },
+      {
+        "image": "/images/resource/feature-5.jpg",
+        "cat": "Second",
+        "name": false,
+		"url": "",
+        "icon": "",
+		"intro": ""
+      },
+      {
+        "image": "/images/resource/feature-1.jpg",
+        "cat": "Second",
+        "name": false,
+		"url": "",
+        "icon": "",
+		"intro": ""
+      },
+      {
+        "image": "/images/resource/feature-1.jpg",
+        "cat": "Second",
+        "name": false,
+		"url": "",
+        "icon": "",
+		"intro": ""
+      },
+      {
+        "image": "/images/resource/feature-1.jpg",
+        "cat": "Second",
+        "name": false,
+		"url": "",
+        "icon": "",
+		"intro": ""
+      }
+    ]
+}
